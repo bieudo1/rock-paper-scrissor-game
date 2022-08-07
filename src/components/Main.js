@@ -3,7 +3,7 @@ import Result from "./Result";
 import Display from "./Display";
 import Choices from "./Choices";
 
-import { getRandomGameItem, calculatorUserWinner } from "../utils";
+import { getRandomGameItem, calculatorUserWinner } from "../src";
 
 const gameItems = [
   {
@@ -47,14 +47,14 @@ export default function Main() {
     <div className="conainer">
       <div className="main">
         <Result
-          user1GameItem={"Your code here"}
-          user2GameItem={"Your code here"}
-          result={"Your code here"}
+          user1GameItem={userGameItem}
+          user2GameItem={computerGameItem}
+          result={result}
         />
         <Display />
         <Choices
-          gameItems={"Your code here"}
-          handleGameItemChange={"Your code here"}
+          gameItems={gameItems}
+          handleGameItemChange={handleGameItemChange}
         />
       </div>
     </div>
